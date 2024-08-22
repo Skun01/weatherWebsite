@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+</head>
+<body>
+    <div class="main-sec">
+        <div class="weather-infor">
+            <div class="weater-infor-container">
+                <p class="description">Broken Clouds</p>
+                <p class="city-name">Hanoi</p>
+                <div class="date-time">
+                    <p class="date">Tuesday, 20th Aug 2024</p>
+                    <p class="time">5:00 pm</p>
+                </div>
+                <div class="temperature">
+                    <span class="curr-temp-data temp">33</span> &deg;<span class="scale">C</span>
+                </div>
+                <div class="change-scale">Display &deg;<span class="curr-scale" currScale='celsius'>F</span></div>
+                <div class="weather-icon main-weather-icon wi wi-cloudy"></div>
+            </div>
+        </div>
+
+        <div class="search-box">
+            <div class="search-container">
+                <input type="text" id="search-bar" placeholder="City name">
+                <i class="search ti-search bigger-effect"></i>
+            </div>
+        </div>
+
+        <div class="weather-details">
+            <div class="weather-details-container">
+                <div class="detail-box">
+                    <i class="detail-icon wi wi-thermometer"></i>
+                    <div class="detail-infor">
+                        <p class="label">Feels Likes</p>
+                        <div class="detail-data">
+                            <span class="temp feels-like-temp">37</span> &deg;<span class="scale">C</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-box">
+                    <i class="detail-icon wi wi-humidity"></i>
+                    <div class="detail-infor">
+                        <p class="label">Humidity</p>
+                        <div class="detail-data">
+                            <span class="humidity">61</span>%
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-box">
+                    <i class="detail-icon wi wi-rain"></i>
+                    <div class="detail-infor">
+                        <p class="label">Chance of Rain</p>
+                        <div class="detail-data">
+                            <span class="chance-rain">83</span>%
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-box">
+                    <i class="detail-icon wi wi-sandstorm"></i>
+                    <div class="detail-infor">
+                        <p class="label">Wind Speed</p>
+                        <div class="detail-data">
+                            <span class="wind-speed">10.9</span> Km/h
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- second main -->
+    <div class="change-forecast">
+        <div class="change-btns">
+            <button class="daily-btn btn btn-active">Daily</button>
+            <button class="hourly-btn btn">Hourly</button>
+            <div class="hours-indicator">
+                <div class="ti-angle-left indicator-btn left-index"></div>
+                <div class="dots dots-active"></div>
+                <div class="dots"></div>
+                <div class="dots"></div>
+                <div class="ti-angle-right indicator-btn right-index"></div>
+            </div>
+        </div>
+
+        <div class="forecast-container">
+            <!-- display once of two -->
+            <div class="daily-forecast forecast-active">
+                <div class="forecast-cell days">
+                    <div class="forecast-name day-name">Thursday</div>
+                    <div class="hight-temp">
+                        <span class="temp">33</span> &deg;<span class="scale">C</span>
+                    </div>
+                    <div class="low-temp">
+                        <span class="temp">25</span> &deg;<span class="scale">C</span>
+                    </div>
+                    <div class="weather-icon wi wi-night-rain"></div>
+                </div>
+                <div class="forecast-cell days">
+                    <div class="forecast-name day-name">Thursday</div>
+                    <div class="hight-temp">
+                        <span class="temp">33</span> &deg;<span class="scale">C</span>
+                    </div>
+                    <div class="low-temp">
+                        <span class="temp">25</span> &deg;<span class="scale">C</span>
+                    </div>
+                    <div class="weather-icon wi wi-night-rain"></div>
+                </div>
+                <div class="forecast-cell days">
+                    <div class="forecast-name day-name">Thursday</div>
+                    <div class="hight-temp">
+                        <span class="temp">33</span> &deg;<span class="scale">C</span>
+                    </div>
+                    <div class="low-temp">
+                        <span class="temp">25</span> &deg;<span class="scale">C</span>
+                    </div>
+                    <div class="weather-icon wi wi-night-rain"></div>
+                </div>
+                <div class="forecast-cell days">
+                    <div class="forecast-name day-name">Thursday</div>
+                    <div class="hight-temp">
+                        <span class="temp">33</span> &deg;<span class="scale">C</span>
+                    </div>
+                    <div class="low-temp">
+                        <span class="temp">25</span> &deg;<span class="scale">C</span>
+                    </div>
+                    <div class="weather-icon wi wi-night-rain"></div>
+                </div>
+                <div class="forecast-cell days">
+                    <div class="forecast-name day-name">Thursday</div>
+                    <div class="hight-temp">
+                        <span class="temp">33</span> &deg;<span class="scale">C</span>
+                    </div>
+                    <div class="low-temp">
+                        <span class="temp">25</span> &deg;<span class="scale">C</span>
+                    </div>
+                    <div class="weather-icon wi wi-night-rain"></div>
+                </div>
+                <div class="forecast-cell days">
+                    <div class="forecast-name day-name">Thursday</div>
+                    <div class="hight-temp">
+                        <span class="temp">33</span> &deg;<span class="scale">C</span>
+                    </div>
+                    <div class="low-temp">
+                        <span class="temp">25</span> &deg;<span class="scale">C</span>
+                    </div>
+                    <div class="weather-icon wi wi-night-rain"></div>
+                </div>
+                <div class="forecast-cell days">
+                    <div class="forecast-name day-name">Thursday</div>
+                    <div class="hight-temp">
+                        <span class="temp">33</span> &deg;<span class="scale">C</span>
+                    </div>
+                    <div class="low-temp">
+                        <span class="temp">25</span> &deg;<span class="scale">C</span>
+                    </div>
+                    <div class="weather-icon wi wi-night-rain"></div>
+                </div>
+            </div>
+
+            <!-- display once of two -->
+            <div class="hourly-forecast">
+                <div class="hours-list hours-1 show-window">
+                    <div class="forecast-cell hours">
+                        <div class="forecast-name hour-name">4pm</div>
+                        <div class="hight-temp">
+                            <span class="temp">33</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="low-temp">
+                            <span class="temp">25</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="weather-icon wi wi-night-rain"></div>
+                    </div>
+                    <div class="forecast-cell hours">
+                        <div class="forecast-name hour-name">4pm</div>
+                        <div class="hight-temp">
+                            <span class="temp">33</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="low-temp">
+                            <span class="temp">25</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="weather-icon wi wi-night-rain"></div>
+                    </div>
+                    <div class="forecast-cell hours">
+                        <div class="forecast-name hour-name">4pm</div>
+                        <div class="hight-temp">
+                            <span class="temp">33</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="low-temp">
+                            <span class="temp">25</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="weather-icon wi wi-night-rain"></div>
+                    </div>
+                    <div class="forecast-cell hours">
+                        <div class="forecast-name hour-name">4pm</div>
+                        <div class="hight-temp">
+                            <span class="temp">33</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="low-temp">
+                            <span class="temp">25</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="weather-icon wi wi-night-rain"></div>
+                    </div>
+                    <div class="forecast-cell hours">
+                        <div class="forecast-name hour-name">4pm</div>
+                        <div class="hight-temp">
+                            <span class="temp">33</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="low-temp">
+                            <span class="temp">25</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="weather-icon wi wi-night-rain"></div>
+                    </div>
+                    <div class="forecast-cell hours">
+                        <div class="forecast-name hour-name">4pm</div>
+                        <div class="hight-temp">
+                            <span class="temp">33</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="low-temp">
+                            <span class="temp">25</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="weather-icon wi wi-night-rain"></div>
+                    </div>
+                    <div class="forecast-cell hours">
+                        <div class="forecast-name hour-name">4pm</div>
+                        <div class="hight-temp">
+                            <span class="temp">33</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="low-temp">
+                            <span class="temp">25</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="weather-icon wi wi-night-rain"></div>
+                    </div>
+
+                    <div class="forecast-cell hours">
+                        <div class="forecast-name hour-name">4pm</div>
+                        <div class="hight-temp">
+                            <span class="temp">33</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="low-temp">
+                            <span class="temp">25</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="weather-icon wi wi-night-rain"></div>
+                    </div>
+                </div>
+
+                <div class="hours-list hours-2">
+                    <div class="forecast-cell hours">
+                        <div class="forecast-name hour-name">4pm</div>
+                        <div class="hight-temp">
+                            <span class="temp">33</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="low-temp">
+                            <span class="temp">25</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="weather-icon wi wi-night-rain"></div>
+                    </div>
+                    <div class="forecast-cell hours">
+                        <div class="forecast-name hour-name">4pm</div>
+                        <div class="hight-temp">
+                            <span class="temp">33</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="low-temp">
+                            <span class="temp">25</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="weather-icon wi wi-night-rain"></div>
+                    </div>
+                    <div class="forecast-cell hours">
+                        <div class="forecast-name hour-name">4pm</div>
+                        <div class="hight-temp">
+                            <span class="temp">33</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="low-temp">
+                            <span class="temp">25</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="weather-icon wi wi-night-rain"></div>
+                    </div>
+                    <div class="forecast-cell hours">
+                        <div class="forecast-name hour-name">4pm</div>
+                        <div class="hight-temp">
+                            <span class="temp">33</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="low-temp">
+                            <span class="temp">25</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="weather-icon wi wi-night-rain"></div>
+                    </div>
+                    <div class="forecast-cell hours">
+                        <div class="forecast-name hour-name">4pm</div>
+                        <div class="hight-temp">
+                            <span class="temp">33</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="low-temp">
+                            <span class="temp">25</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="weather-icon wi wi-night-rain"></div>
+                    </div>
+                    <div class="forecast-cell hours">
+                        <div class="forecast-name hour-name">4pm</div>
+                        <div class="hight-temp">
+                            <span class="temp">33</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="low-temp">
+                            <span class="temp">25</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="weather-icon wi wi-night-rain"></div>
+                    </div>
+                    <div class="forecast-cell hours">
+                        <div class="forecast-name hour-name">4pm</div>
+                        <div class="hight-temp">
+                            <span class="temp">33</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="low-temp">
+                            <span class="temp">25</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="weather-icon wi wi-night-rain"></div>
+                    </div>
+
+                    <div class="forecast-cell hours">
+                        <div class="forecast-name hour-name">4pm</div>
+                        <div class="hight-temp">
+                            <span class="temp">33</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="low-temp">
+                            <span class="temp">25</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="weather-icon wi wi-night-rain"></div>
+                    </div>
+                </div>
+
+                <div class="hours-list hours-3">
+                    <div class="forecast-cell hours">
+                        <div class="forecast-name hour-name">4pm</div>
+                        <div class="hight-temp">
+                            <span class="temp">33</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="low-temp">
+                            <span class="temp">25</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="weather-icon wi wi-night-rain"></div>
+                    </div>
+                    <div class="forecast-cell hours">
+                        <div class="forecast-name hour-name">4pm</div>
+                        <div class="hight-temp">
+                            <span class="temp">33</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="low-temp">
+                            <span class="temp">25</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="weather-icon wi wi-night-rain"></div>
+                    </div>
+                    <div class="forecast-cell hours">
+                        <div class="forecast-name hour-name">4pm</div>
+                        <div class="hight-temp">
+                            <span class="temp">33</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="low-temp">
+                            <span class="temp">25</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="weather-icon wi wi-night-rain"></div>
+                    </div>
+                    <div class="forecast-cell hours">
+                        <div class="forecast-name hour-name">4pm</div>
+                        <div class="hight-temp">
+                            <span class="temp">33</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="low-temp">
+                            <span class="temp">25</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="weather-icon wi wi-night-rain"></div>
+                    </div>
+                    <div class="forecast-cell hours">
+                        <div class="forecast-name hour-name">4pm</div>
+                        <div class="hight-temp">
+                            <span class="temp">33</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="low-temp">
+                            <span class="temp">25</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="weather-icon wi wi-night-rain"></div>
+                    </div>
+                    <div class="forecast-cell hours">
+                        <div class="forecast-name hour-name">4pm</div>
+                        <div class="hight-temp">
+                            <span class="temp">33</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="low-temp">
+                            <span class="temp">25</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="weather-icon wi wi-night-rain"></div>
+                    </div>
+                    <div class="forecast-cell hours">
+                        <div class="forecast-name hour-name">4pm</div>
+                        <div class="hight-temp">
+                            <span class="temp">33</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="low-temp">
+                            <span class="temp">25</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="weather-icon wi wi-night-rain"></div>
+                    </div>
+
+                    <div class="forecast-cell hours">
+                        <div class="forecast-name hour-name">4pm</div>
+                        <div class="hight-temp">
+                            <span class="temp">33</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="low-temp">
+                            <span class="temp">25</span> &deg;<span class="scale">C</span>
+                        </div>
+                        <div class="weather-icon wi wi-night-rain"></div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- error alert -->
+    <div class="error-alert">
+        <div class="close-btn ti-close bigger-effect"></div>
+        <div class="main-message">
+            <div class="error-icon ti-help"></div>
+            <p class="error-message">Can not find that location, try something else!</p>
+        </div>
+        <button class="confirm-error-btn">OK</button>
+    </div>
+    <div class="footer">
+        Hi! I'm <a href="https://github.com/Skun01" id="" target="_blank">Truong</a>
+    </div>
+</body>
+</html>

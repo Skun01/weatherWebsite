@@ -1,0 +1,119 @@
+.change-forecast{
+   padding: 15px 50px;
+   height: 300px;
+
+}
+
+/* everything about button section */
+.change-btns{
+   margin-bottom: 15px;
+   display: flex;
+}
+
+.change-btns .btn{
+   font-size: 19px;
+   padding: 3px 8px;
+   margin-right: 15px;
+   outline: none;
+   border: 1px solid black;
+   box-shadow: 3px 3px 2px rgba(0,0,0);
+   cursor: pointer;
+   border-radius: 10px;
+   transition: all 0.2s;
+}
+
+.change-btns .btn:hover{
+   box-shadow: none;
+}
+
+.btn.btn-active{
+   box-shadow: none;
+}
+
+.change-btns .dots{
+   width: 8px;
+   height: 8px;
+   border-radius: 50%;
+   border: 1px solid white;
+}
+
+/* use js to display here */
+.change-btns .hours-indicator{
+   display: none;
+   gap: 10px;
+   align-items: center;
+}
+
+.dots-active{
+   background-color: white;
+}
+
+.show-window{
+   display: flex !important;
+}
+
+.indicator-btn{
+   cursor: pointer;
+   transition: transform 0.2s;
+}
+
+.indicator-btn:hover{
+   transform: scale(1.3);
+}
+
+
+ 
+/* Forecast section */
+.daily-forecast,
+.hours-list{
+   display: flex;
+   justify-content: space-between;
+}
+
+.daily-forecast{
+   display: none;
+}
+
+.change-forecast .forecast-cell .forecast-name{
+   font-size: 20px;
+   font-weight: 500;
+   font-style: italic;
+   margin-bottom: 10px;
+}
+
+.change-forecast .forecast-cell .hight-temp{
+   font-size: 28px;
+   font-weight: 650;
+}
+
+.change-forecast .forecast-cell .low-temp{
+   font-size: 14px;
+}
+
+.change-forecast .weather-icon{
+   font-size: 40px;
+   margin-top: 15px;
+}
+
+.hourly-forecast{
+   display: none;
+   flex-direction: column;
+   position: relative;
+}
+
+.hours-list{
+   position: absolute;
+   width: 100%;
+   display: none;
+}
+
+.forecast-active{
+   display: flex;
+}
+
+.footer{
+   padding: 20px 0;
+   color: rgb(0, 0, 0);
+   text-align: center;
+   font-weight: 800;
+}

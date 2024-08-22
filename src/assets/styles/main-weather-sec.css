@@ -1,0 +1,142 @@
+.main-sec{
+   display: flex;
+   font-size: 19px;
+}
+
+.weather-infor,
+.weather-details{
+   width: 350px;
+   padding: 25px 50px;
+}
+
+/* left main weather side */
+.weather-infor{
+   
+}
+
+.weather-infor .description{
+   font-size: 30px;
+   font-weight: 500;
+}
+
+.weather-infor .city-name{
+   margin-top: 5px;
+}
+
+.weather-infor .date-time{
+   font-size: 12px;
+}
+
+.weather-infor .temperature,
+.main-weather-icon{
+   font-weight:700;
+   font-size: 60px;
+   margin-top: 20px;
+}
+
+.weather-infor .change-scale{
+   font-size: 11px;
+   cursor: pointer;
+   border: 3px solid white;
+   width: 40%;
+   padding: 3px 5px;
+   text-align: center;
+   border-radius: 10px;
+   transition: all 0.2s;
+}
+
+.weather-infor .change-scale:hover{
+   color: black;
+   background-color: white;
+   transform: scale(1.2);
+}
+
+
+.weather-infor .main-weather-icon{
+   margin-top: 30px;
+}
+
+
+/* center main section */
+.search-box{
+   flex: 1;
+   padding: 8px;
+}
+
+.search-container{
+   width: fit-content;
+   height: 50px;
+   margin: auto;
+   margin-top: 40%;
+   display: flex;
+   background-color: #fff;
+   align-items: center;
+   justify-content: center;
+   border-radius: 25px;
+   padding: 5px 15px;
+   transition: all 0.2s;
+}
+
+
+.search-container:hover{
+   box-shadow: 0 0 4px 5px rgba(0, 0, 0, 0.35);
+}
+
+.search-box .search{
+   color: #1daf;
+   font-size: 25px;
+}
+#search-bar{
+   border: none;
+   padding: 5px;
+   outline: none;
+   font-size: 20px;
+   background-color: transparent;
+   width: 260px;
+}
+
+
+.search-box .search {
+   display: inline-block;
+   cursor: pointer;
+}
+
+.bigger-effect{
+   transition: all 0.2s;
+}
+
+.bigger-effect:hover{
+   transform: scale(1.2);
+}
+
+/* right side main section */
+.weather-details{
+
+}
+
+.weather-details .weather-details-container{
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+   
+}
+.detail-box{
+   display: flex;
+   gap: 5px;
+}
+
+
+.detail-box .detail-icon{
+   line-height: 46px;
+   width: 40px;
+   text-align: center;
+   font-size: 23px;
+}
+
+.detail-box .label{
+   font-size: 14px;
+}
+
+.detail-box .detail-data{
+   font-weight: 650;
+}
